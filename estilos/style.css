@@ -10,6 +10,7 @@ html, body {
     height: 100vh;
     width: 100vw;
     background-color: black;
+    overflow: hidden;
 }
 
 body {
@@ -28,6 +29,7 @@ section#telefone {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin-left: -10px;
 
     /* parfa pegar os valores exatos das imagens apenas abra o gimp e vá em propriedades da imagem */
     height: 627px;
@@ -37,9 +39,10 @@ section#telefone {
 }
 
 /* se quiser voltar ao normal é só tirar o media query */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) and (max-height:630px){
     section#telefone {
-        height: 450px;
+        height: 300px;
+        margin-left: 60px;
     }
     
 }
@@ -51,12 +54,17 @@ iframe#tela {
     width: 267px;
 }
 /* se quiser voltar ao normal é só tirar o media query */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) and (max-height: 630px) {
     #tela {
-        margin: -22px -10px 5px -6.6px;
+        margin: -46px -10px 5px -11.5px;
         padding: 0px;
-        max-height: 338px;
-        max-width: 193px;
+        max-height: 230px;
+        max-width: 128.8px;
+    }
+    #redes-sociais > a > img {
+        max-width: 30px;
+        height: 30px;
+
     }
 }
 section#redes-sociais {
@@ -66,7 +74,6 @@ section#redes-sociais {
 section#redes-sociais img {
     width: 50px;
     margin: 10px;
-    margin-left: 50px;
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.418);
     box-sizing: border-box;
