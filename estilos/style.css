@@ -33,8 +33,16 @@ section#telefone {
     height: 627px;
     width: 311px;
     background: url('../imagens/frame-iphone.png') no-repeat;
+    background-size: contain;
 }
 
+/* se quiser voltar ao normal é só tirar o media query */
+@media screen and (max-width: 1000px) {
+    section#telefone {
+        height: 450px;
+    }
+    
+}
 iframe#tela {
     position: relative;
     top: 80px;
@@ -42,7 +50,15 @@ iframe#tela {
     height: 471px;
     width: 267px;
 }
-
+/* se quiser voltar ao normal é só tirar o media query */
+@media screen and (max-width: 1000px) {
+    #tela {
+        margin: -22px -10px 5px -6.6px;
+        padding: 0px;
+        max-height: 338px;
+        max-width: 193px;
+    }
+}
 section#redes-sociais {
     text-align: right;
 }
@@ -50,6 +66,7 @@ section#redes-sociais {
 section#redes-sociais img {
     width: 50px;
     margin: 10px;
+    margin-left: 50px;
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.418);
     box-sizing: border-box;
