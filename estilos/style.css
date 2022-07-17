@@ -29,7 +29,6 @@ section#telefone {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-left: -10px;
 
     /* parfa pegar os valores exatos das imagens apenas abra o gimp e vá em propriedades da imagem */
     height: 627px;
